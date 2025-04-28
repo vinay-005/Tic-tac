@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome | Tic Tac Toe - Vinaytron</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+</head>
+
+<body class="landing-body">
+
+    <!-- Sidebar Toggle -->
+    <button class="menu-toggle" id="menuToggle"><i class="fas fa-bars"></i></button>
+
+    <!-- Sidebar -->
+    <nav class="sidebar" id="sidebar">
+        <div class="sidebar-links">
+            <a href="#"><i class="fas fa-home"></i> Home</a>
+            <a href="game.html"><i class="fas fa-play"></i> Play</a>
+            <a href="#about-section"><i class="fas fa-info-circle"></i> About</a>
+            <a href="#contact-section"><i class="fas fa-envelope"></i> Contact</a>
+        </div>
+
+        <div class="sidebar-footer">
+            <p>© 2025 Vinaytron</p>
+        </div>
+    </nav>
+
+    <!-- Animated Background -->
+    <div class="vinaytron-background">
+        <span>Vinaytron</span>
+        <span>Vinaytron</span>
+        <span>Vinaytron</span>
+        <span>Vinaytron</span>
+        <span>Vinaytron</span>
+        <span>Vinaytron</span>
+        <span>Vinaytron</span>
+        <span>Vinaytron</span>
+        <span>Vinaytron</span>
+        <span>Vinaytron</span>
+    </div>
+
+    <!-- Landing Section -->
+    <div class="landing-container" id="landing">
+        <h1 class="landing-title">Tic Tac Toe</h1>
+        <p class="landing-subtitle">by <span class="highlight">Vinay Tiwari (Vinaytron)</span></p>
+        <p class="landing-description">
+            One grid. Two players. Endless hype. <br>Let the Tic Tac showdown begin <br>— only by Vinaytron.
+        </p>
+        <a href="game.html" class="play-btn">Play Now</a>
+    </div>
+
+    <span id="typed"></span>
+
+
+    <!-- Game Screenshot Section -->
+    <section class="game-screenshot-section">
+        <h2 class="landing-title">Game Preview</h2>
+        <p class="landing-description">Here’s a sneak peek of the gameplay experience.</p>
+        <img src="screenshot.png" alt="Tic Tac Toe Game Screenshot" class="game-image" />
+    </section>
+
+    <!-- About Section -->
+    <section id="about-section" class="about-container">
+        <h2 class="landing-title">About the Game</h2>
+        <p class="landing-description">
+            <strong>Tic Tac Toe by Vinaytron</strong> is a modern twist on a timeless classic.
+            Designed for two players, it delivers quick, brain-teasing fun through a clean and interactive interface.
+        </p>
+        <p class="landing-description">
+            Developed using HTML, CSS, and JavaScript, this game reflects the simplicity and power of web development.
+            Whether you're battling a friend or just killing time, this game has got you.
+        </p>
+
+        <!--  Meet the Developer Card -->
+        <div class="developer-card">
+            <img src="your-photo.png" alt="Vinay Tiwari" class="dev-photo" />
+            <div class="dev-info">
+                <h3>Vinay Tiwari</h3>
+                <p>Frontend Developer | Creator of Vinaytron</p>
+                <p>
+                    I'm passionate about crafting clean UIs and interactive web experiences.
+                    This game is one of my fun side projects. Want to collaborate or say hi?
+                    Let's connect!
+                </p>
+                <div class="dev-links">
+                    <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:youremail@example.com"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact-section" class="contact-container">
+        <h2 class="landing-title">Contact Me</h2>
+        <p class="landing-description">Have questions, feedback, or just want to say hi? Reach out to me!</p>
+
+        <!-- Contact Form -->
+        <form action="mailto:youremail@example.com" method="post" enctype="text/plain" class="contact-form">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required placeholder="Your Name" />
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required placeholder="Your Email" />
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required placeholder="Your Message" rows="4"></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <p>© 2025 Vinaytron. All rights reserved.</p>
+    </footer>
+
+    <script src="sidebar.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tac Toe - Vinaytron</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+    <!-- Home Button -->
+    <a href="index.html" class="home-btn">
+        <i class="fas fa-home"></i> Home
+    </a>
+
+    <div class="game-container">
+        <h1>Tic Tac Toe</h1>
+        <div class="mode-select" style="margin-bottom: 15px;">
+            <span style="color: #fff; font-weight: 600; margin-right: 10px;">Mode:</span>
+            <label class="switch">
+                <input type="checkbox" id="ai-toggle" />
+                <span class="slider"></span>
+            </label>
+            <span id="mode-label" style="color: cyan; font-weight: bold; margin-left: 10px;">2 Player</span>
+        </div>
+
+        <div class="turn">Player X's Turn</div>
+        <div class="grid">
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+        </div>
+        <div id="win-line" class="win-line"></div>
+        <button class="replay">Restart Game</button>
+    </div>
+
+    <!-- Sound Effects -->
+    <audio id="move-sound" src="move.mp3" preload="auto"></audio>
+    <audio id="win-sound" src="win.mp3" preload="auto"></audio>
+    <audio id="draw-sound" src="draw.mp3" preload="auto"></audio>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
